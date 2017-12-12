@@ -1,0 +1,331 @@
+/* If you edit this file, your modifications will be overwritten during the next upgrade.
+Copy this stylesheet with a different name, edit it, and
+select your own custom css in "Advanced Options" of your forms */
+
+/* Form framework */
+div#foxcontainer<?php echo $uid ?>
+{
+	width: <?php $w = $this->Params->get("form__width", (object)array("text" => "", "select" => "auto")); echo $w->text . $w->select; ?>;
+	padding: 16px;
+	overflow: hidden; /* Fixes the link overhang */
+	margin: auto; /* Center the form on the page when the form width (px or %) is less than the page width */
+}
+
+/* Form title */
+div#foxcontainer<?php echo $uid ?> .foxcontainer h2
+{
+}
+
+/* Twitter bootstrap alert boxes (message area) */
+div#foxcontainer<?php echo $uid ?> .alert
+{
+	padding: 8px 35px 8px 14px;
+	margin-bottom: 20px;
+	color: #c09853;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+	border-width: 1px;
+	border-style: solid;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background-image: none; /* removes the background image set by some templates */
+}
+
+div#foxcontainer<?php echo $uid ?> .alert h4
+{
+	margin: 0;
+}
+
+div#foxcontainer<?php echo $uid ?> .alert .close
+{
+	position: relative;
+	top: -2px;
+	right: -21px;
+	line-height: 20px;
+}
+
+div#foxcontainer<?php echo $uid ?> .alert-success
+{
+	color: #468847;
+	background-color: #dff0d8;
+	border-color: #d6e9c6;
+}
+
+div#foxcontainer<?php echo $uid ?> .alert-info
+{
+	color: #3a87ad;
+	background-color: #d9edf7;
+	border-color: #bce8f1;
+}
+
+div#foxcontainer<?php echo $uid ?> .alert-warning
+{
+	color: #c09853;
+	background-color: #fcf8e3;
+	border-color: #fbeed5;
+}
+
+div#foxcontainer<?php echo $uid ?> .alert-error
+{
+	color: #b94a48;
+	background-color: #f2dede;
+	border-color: #eed3d7;
+}
+
+/* List within the message area at the top of the form */
+div#foxcontainer<?php echo $uid ?> ul.fox_messages
+{
+	margin: 0;
+	padding: 0;
+}
+
+div#foxcontainer<?php echo $uid ?> ul.fox_messages > li
+{
+}
+
+/* buttons */
+div#foxcontainer<?php echo $uid ?> .btn
+{
+	padding: 4px 12px;
+	line-height: 20px;
+	/* The most of the bad written Joomla templates force a white font with !important */
+	color: #333333 !important;
+	text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+}
+
+/* Files list */
+div#foxcontainer<?php echo $uid ?> .qq-upload-file,
+div#foxcontainer<?php echo $uid ?> .qq-upload-spinner,
+div#foxcontainer<?php echo $uid ?> .qq-upload-size,
+div#foxcontainer<?php echo $uid ?> .qq-upload-cancel,
+div#foxcontainer<?php echo $uid ?> .qq-upload-failed-text
+{
+	margin: 0 4px;
+}
+
+/* Upload button */
+div#foxcontainer<?php echo $uid ?> .qq-upload-button span
+{
+	background: url("<?php echo $juri_root ?>/media/com_foxcontact/images/upload.png") no-repeat scroll <?php echo $left ?> 50% transparent;
+	padding-<?php echo $left ?>: 24px;
+}
+
+div#foxcontainer<?php echo $uid ?> .control-group
+{
+	margin-bottom: 20px;
+}
+
+/* Horizontal space between fields in inline forms */
+div#foxcontainer<?php echo $uid ?> .foxform-inline .control-group,
+div#foxcontainer<?php echo $uid ?> .foxform-inline .control-group label.control-label
+{
+	margin-right: 16px;
+}
+
+div#foxcontainer<?php echo $uid ?> .control-group .checkbox
+{
+	/* Reduces the vertical space between checkboxes */
+	padding-top: 0;
+	padding-bottom: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+div#foxcontainer<?php echo $uid ?> .fox_form select,
+div#foxcontainer<?php echo $uid ?> .fox_form textarea,
+div#foxcontainer<?php echo $uid ?> .fox_form input[type="text"]
+{
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	color: #555555;
+	background-color: #ffffff;
+}
+
+/* Background highlight when hover or selected */
+div#foxcontainer<?php echo $uid ?> .fox_form input[type="text"]:hover,
+div#foxcontainer<?php echo $uid ?> .fox_form textarea:hover,
+div#foxcontainer<?php echo $uid ?> .fox_form input[type="text"]:focus,
+div#foxcontainer<?php echo $uid ?> .fox_form textarea:focus
+{
+	background-color: #ffffe0;
+}
+
+/* Border of fields */
+div#foxcontainer<?php echo $uid ?> select,
+div#foxcontainer<?php echo $uid ?> textarea,
+div#foxcontainer<?php echo $uid ?> input[type="text"],
+div#foxcontainer<?php echo $uid ?> input[type="password"]
+{
+	background-color: #ffffff;
+	border: 1px solid #aaaaaa;
+	-webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+	-moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+	-o-transition: border linear 0.2s, box-shadow linear 0.2s;
+	transition: border linear 0.2s, box-shadow linear 0.2s;
+}
+
+/* Green font */
+div#foxcontainer<?php echo $uid ?> .control-group.success > label,
+div#foxcontainer<?php echo $uid ?> .control-group.success .checkbox,
+div#foxcontainer<?php echo $uid ?> .control-group.success .radio,
+div#foxcontainer<?php echo $uid ?> .control-group.success input,
+div#foxcontainer<?php echo $uid ?> .control-group.success select,
+div#foxcontainer<?php echo $uid ?> .control-group.success textarea,
+div#foxcontainer<?php echo $uid ?> .control-group.success a.chzn-single /* Add the chosen as well */
+{
+	color: #468847;
+}
+
+/* Green border */
+div#foxcontainer<?php echo $uid ?> .control-group.success input,
+div#foxcontainer<?php echo $uid ?> .control-group.success select,
+div#foxcontainer<?php echo $uid ?> .control-group.success textarea,
+div#foxcontainer<?php echo $uid ?> .control-group.success a.chzn-single /* Add the chosen as well */
+{
+	border-color: #468847;
+}
+
+/* Red font */
+div#foxcontainer<?php echo $uid ?> .control-group.error > label,
+div#foxcontainer<?php echo $uid ?> .control-group.error .checkbox,
+div#foxcontainer<?php echo $uid ?> .control-group.error .radio,
+div#foxcontainer<?php echo $uid ?> .control-group.error input,
+div#foxcontainer<?php echo $uid ?> .control-group.error select,
+div#foxcontainer<?php echo $uid ?> .control-group.error textarea,
+div#foxcontainer<?php echo $uid ?> .control-group.error a.chzn-single /* Add the chosen as well */
+{
+	color: #b94a48;
+}
+
+/* Red border */
+div#foxcontainer<?php echo $uid ?> .control-group.error input,
+div#foxcontainer<?php echo $uid ?> .control-group.error select,
+div#foxcontainer<?php echo $uid ?> .control-group.error textarea,
+div#foxcontainer<?php echo $uid ?> .control-group.error a.chzn-single /* Add the chosen as well */
+{
+	border-color: #b94a48;
+}
+
+/* Blue border when focused */
+div#foxcontainer<?php echo $uid ?> textarea:focus,
+div#foxcontainer<?php echo $uid ?> input[type="text"]:focus,
+div#foxcontainer<?php echo $uid ?> input[type="password"]:focus
+{
+	border-color: rgba(82, 168, 236, 0.8);
+	outline: 0;
+	outline: thin dotted \9;
+	/* IE6-9 */
+
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+	-moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+}
+
+/* Dark red when invalid fields are focused */
+div#foxcontainer<?php echo $uid ?> .control-group.error input:focus,
+div#foxcontainer<?php echo $uid ?> .control-group.error select:focus,
+div#foxcontainer<?php echo $uid ?> .control-group.error textarea:focus
+{
+	border-color: #953b39;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #d59392;
+	-moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #d59392;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #d59392;
+}
+
+/* Dark green when valid fields are focused */
+div#foxcontainer<?php echo $uid ?> .control-group.success input:focus,
+div#foxcontainer<?php echo $uid ?> .control-group.success select:focus,
+div#foxcontainer<?php echo $uid ?> .control-group.success textarea:focus
+{
+	border-color: #356635;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #7aba7b;
+	-moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #7aba7b;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #7aba7b;
+}
+
+/* Help text under some fields */
+div#foxcontainer<?php echo $uid ?> span.help-block
+{
+	font-size: 80%;
+}
+
+/* Built-in captcha */
+div#foxcontainer<?php echo $uid ?> .fcaptchafieldcontainer
+{
+	padding: 5px 0;
+}
+
+/* Built-in captcha input box */
+div#foxcontainer<?php echo $uid ?> .fcaptchainputcontainer
+{
+	padding: 5px 10px 5px 0;
+}
+
+html[dir="rtl"] div#foxcontainer<?php echo $uid ?> .fcaptchainputcontainer
+{
+	padding: 5px 0 5px 10px;
+}
+
+/* Built-in captcha reload button */
+div#foxcontainer<?php echo $uid ?> .fcaptcha-reload-container
+{
+	padding: 10px 0;
+}
+
+/* Built-in captcha main image */
+div#foxcontainer<?php echo $uid ?> .fox_captcha_img
+{
+	padding: 4px;
+	border: 1px solid #c0c0c0;
+	border-radius: 5px 5px 5px 5px;
+	box-shadow: 0 0 7px rgba(192, 192, 192, 0.698);
+}
+
+div#foxcontainer<?php echo $uid ?> span.qq-upload-size
+{
+	background-image: url("<?php echo $juri_root ?>/media/com_foxcontact/images/bootstrap/drive.png");
+}
+
+/* Attached files list */
+div#foxcontainer<?php echo $uid ?> ul.qq-upload-list > li
+{
+	margin: 4px 0;
+}
+
+/* Attached files icons */
+div#foxcontainer<?php echo $uid ?> .qq-upload-file
+{
+	background-image: url("<?php echo $juri_root ?>/media/com_foxcontact/images/clip-16.png");
+}
+
+div#foxcontainer<?php echo $uid ?> .qq-upload-failed-text
+{
+	color: #b94a48;
+	background-image: url("<?php echo $juri_root ?>/media/com_foxcontact/images/bootstrap/cross.png");
+}
+
+div#foxcontainer<?php echo $uid ?> .qq-upload-success-text
+{
+	color: #468847;
+	background-image: url("<?php echo $juri_root ?>/media/com_foxcontact/images/bootstrap/checkmark.png");
+}
+
+div#foxcontainer<?php echo $uid ?> .qq-upload-remove
+{
+	color: #b94a48;
+	background-image: url("<?php echo $juri_root ?>/media/com_foxcontact/images/bootstrap/trash.png");
+	cursor: pointer;
+}
+
+.fox_error_message
+{
+	background: url("<?php echo $juri_root ?>/media/com_foxcontact/images/error-16.png") no-repeat scroll <?php echo $left ?> center transparent;
+	padding: 0 20px;
+}
+
+/* Send a copy to myself checkbox */
+div#foxcontainer<?php echo $uid ?> .fox_copy_to_sender
+{
+	/*margin-left: 160px;*/
+}

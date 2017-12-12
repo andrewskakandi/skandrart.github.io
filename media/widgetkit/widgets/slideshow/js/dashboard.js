@@ -1,0 +1,3 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+jQuery(function($){$("#slideshow").delegate("a.action.delete","click",function(e){e.preventDefault();if(!confirm("Are you Sure?"))return;var button=$(this);$.post(widgetkitajax+"&task=delete_slideshow",{id:$(this).attr("data-id")},function(data){if(data&&data.id){button.parents("tr:first").fadeOut(function(){$(this).remove()})}else{alert("Delete action failed.")}},"json")})});

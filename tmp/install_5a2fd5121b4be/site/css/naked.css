@@ -1,0 +1,214 @@
+/* If you edit this file, your modifications will be overwritten during the next upgrade.
+Copy this stylesheet with a different name, edit it, and finally
+select your own custom css in "Advanced Options" of your forms */
+
+/* Form framework */
+div#foxcontainer<?php echo $uid ?>
+{
+}
+
+/* Form title */
+div#foxcontainer<?php echo $uid ?> .foxcontainer h2
+{
+}
+
+/* Twitter bootstrap alert boxes (message area) */
+div#foxcontainer<?php echo $uid ?> .alert
+{
+}
+
+div#foxcontainer<?php echo $uid ?> .alert h4
+{
+}
+
+div#foxcontainer<?php echo $uid ?> .alert .close
+{
+}
+
+div#foxcontainer<?php echo $uid ?> .alert-success
+{
+}
+
+div#foxcontainer<?php echo $uid ?> .alert-info
+{
+}
+
+div#foxcontainer<?php echo $uid ?> .alert-warning
+{
+}
+
+div#foxcontainer<?php echo $uid ?> .alert-error
+{
+}
+
+/* List within the message area at the top of the form */
+div#foxcontainer<?php echo $uid ?> ul.fox_messages
+{
+}
+
+div#foxcontainer<?php echo $uid ?> ul.fox_messages > li
+{
+}
+
+/* buttons */
+div#foxcontainer<?php echo $uid ?> .btn
+{
+}
+
+/* Files list */
+div#foxcontainer<?php echo $uid ?> .qq-upload-file,
+div#foxcontainer<?php echo $uid ?> .qq-upload-spinner,
+div#foxcontainer<?php echo $uid ?> .qq-upload-size,
+div#foxcontainer<?php echo $uid ?> .qq-upload-cancel,
+div#foxcontainer<?php echo $uid ?> .qq-upload-failed-text
+{
+}
+
+/* Upload button */
+div#foxcontainer<?php echo $uid ?> .qq-upload-button span
+{
+}
+
+div#foxcontainer<?php echo $uid ?> .control-group
+{
+}
+
+div#foxcontainer<?php echo $uid ?> .control-group .checkbox
+{
+}
+
+/* Background highlight when hover or selected */
+div#foxcontainer<?php echo $uid ?> .fox_form input[type="text"]:hover,
+div#foxcontainer<?php echo $uid ?> .fox_form textarea:hover,
+div#foxcontainer<?php echo $uid ?> .fox_form input[type="text"]:focus,
+div#foxcontainer<?php echo $uid ?> .fox_form textarea:focus
+{
+}
+
+/* Border of fields */
+div#foxcontainer<?php echo $uid ?> select,
+div#foxcontainer<?php echo $uid ?> textarea,
+div#foxcontainer<?php echo $uid ?> input[type="text"],
+div#foxcontainer<?php echo $uid ?> input[type="password"]
+{
+}
+
+/* Green font */
+div#foxcontainer<?php echo $uid ?> .control-group.success > label,
+div#foxcontainer<?php echo $uid ?> .control-group.success .checkbox,
+div#foxcontainer<?php echo $uid ?> .control-group.success .radio,
+div#foxcontainer<?php echo $uid ?> .control-group.success input,
+div#foxcontainer<?php echo $uid ?> .control-group.success select,
+div#foxcontainer<?php echo $uid ?> .control-group.success textarea,
+div#foxcontainer<?php echo $uid ?> .control-group.success a.chzn-single /* Add the chosen as well */
+{
+}
+
+/* Green border */
+div#foxcontainer<?php echo $uid ?> .control-group.success input,
+div#foxcontainer<?php echo $uid ?> .control-group.success select,
+div#foxcontainer<?php echo $uid ?> .control-group.success textarea,
+div#foxcontainer<?php echo $uid ?> .control-group.success a.chzn-single /* Add the chosen as well */
+{
+}
+
+/* Red font */
+div#foxcontainer<?php echo $uid ?> .control-group.error > label,
+div#foxcontainer<?php echo $uid ?> .control-group.error .checkbox,
+div#foxcontainer<?php echo $uid ?> .control-group.error .radio,
+div#foxcontainer<?php echo $uid ?> .control-group.error input,
+div#foxcontainer<?php echo $uid ?> .control-group.error select,
+div#foxcontainer<?php echo $uid ?> .control-group.error textarea,
+div#foxcontainer<?php echo $uid ?> .control-group.error a.chzn-single /* Add the chosen as well */
+{
+}
+
+/* Red border */
+div#foxcontainer<?php echo $uid ?> .control-group.error input,
+div#foxcontainer<?php echo $uid ?> .control-group.error select,
+div#foxcontainer<?php echo $uid ?> .control-group.error textarea,
+div#foxcontainer<?php echo $uid ?> .control-group.error a.chzn-single /* Add the chosen as well */
+{
+}
+
+/* Blue border when focused */
+div#foxcontainer<?php echo $uid ?> textarea:focus,
+div#foxcontainer<?php echo $uid ?> input[type="text"]:focus,
+div#foxcontainer<?php echo $uid ?> input[type="password"]:focus
+{
+}
+
+/* Dark red when invalid fields are focused */
+div#foxcontainer<?php echo $uid ?> .control-group.error input:focus,
+div#foxcontainer<?php echo $uid ?> .control-group.error select:focus,
+div#foxcontainer<?php echo $uid ?> .control-group.error textarea:focus
+{
+}
+
+/* Dark green when valid fields are focused */
+div#foxcontainer<?php echo $uid ?> .control-group.success input:focus,
+div#foxcontainer<?php echo $uid ?> .control-group.success select:focus,
+div#foxcontainer<?php echo $uid ?> .control-group.success textarea:focus
+{
+}
+
+/* Help text under some fields */
+div#foxcontainer<?php echo $uid ?> span.help-block
+{
+}
+
+/* Built-in captcha */
+div#foxcontainer<?php echo $uid ?> .fcaptchafieldcontainer
+{
+}
+
+/* Built-in captcha input box */
+div#foxcontainer<?php echo $uid ?> .fcaptchainputcontainer
+{
+}
+
+html[dir="rtl"] div#foxcontainer<?php echo $uid ?> .fcaptchainputcontainer
+{
+}
+
+/* Built-in captcha reload button */
+div#foxcontainer<?php echo $uid ?> .fcaptcha-reload-container
+{
+}
+
+/* Built-in captcha main image */
+div#foxcontainer<?php echo $uid ?> .fox_captcha_img
+{
+}
+
+div#foxcontainer<?php echo $uid ?> span.qq-upload-size
+{
+}
+
+/* Attached files list */
+div#foxcontainer<?php echo $uid ?> ul.qq-upload-list > li
+{
+}
+
+/* Attached files icons */
+div#foxcontainer<?php echo $uid ?> .qq-upload-file
+{
+}
+
+div#foxcontainer<?php echo $uid ?> .qq-upload-failed-text
+{
+}
+
+div#foxcontainer<?php echo $uid ?> .qq-upload-success-text
+{
+}
+
+.fox_error_message
+{
+}
+
+/* Send a copy to myself checkbox */
+div#foxcontainer<?php echo $uid ?> .fox_copy_to_sender
+{
+}
+

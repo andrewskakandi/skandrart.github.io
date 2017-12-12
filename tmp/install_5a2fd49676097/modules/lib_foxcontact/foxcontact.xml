@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="library" version="3.0" method="upgrade">
+	<name>Fox Contact</name>
+	<creationDate>Jun 2014</creationDate>
+	<author>Demis Palma</author>
+	<authorEmail>demis@fox.ra.it</authorEmail>
+	<authorUrl>http://www.fox.ra.it/</authorUrl>
+	<copyright>Demis Palma</copyright>
+	<license>GNU/GPL v3</license>
+	<version>3.3.1</version>
+	<libraryname>foxcontact</libraryname>
+
+	<files>
+		<folder>loader</folder>
+		<filename>index.html</filename>
+	</files>
+
+</extension>

@@ -1,0 +1,3 @@
+/* Copyright (C) YOOtheme GmbH, YOOtheme Proprietary Use License (http://www.yootheme.com/license) */
+
+jQuery(function($){var form=$("#lightbox form");$('input[type="submit"]',form).bind("click",function(e){e.preventDefault();var input=$(this);input.attr("disabled",true).parent().addClass("saving");$.post(form.attr("action"),form.serialize(),function(data){input.attr("disabled",false).parent().removeClass("saving")})});var howto=$("#lightbox div.howtouse").hide();$("#lightbox a.howtouse").bind("click",function(){howto.slideToggle()})});

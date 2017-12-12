@@ -1,0 +1,644 @@
+/* This is not the stylesheet you are looking for...
+ * This resource is dynamically generated based on the file media/com_foxcontact/css/foxcontact.css
+ * It contains statements necessary for the proper display of the form.
+ * You shouldn't modify it. If you really need it, override css rules on your own css instead. */
+
+/* Fix: A bug affecting both twitter bootstrap 2.1 and Joomla Protostar 1.0 template which is derived from bootstrap */
+.control-group.error .checkbox, .control-group.error .radio,
+.control-group.success .checkbox, .control-group.success .radio
+{
+	-webkit-box-shadow: none !important;
+	-moz-box-shadow: none !important;
+	box-shadow: none !important;
+}
+
+/* Alert boxes */
+div#foxcontainer<?php echo $uid ?> div.alert ul
+{
+	list-style-type: none;
+}
+
+/* Fix: issues with some templates */
+div#foxcontainer<?php echo $uid ?> div.alert li
+{
+	background: none;
+}
+
+/* Mandatory field marker, Invalid value in field */
+div#foxcontainer<?php echo $uid ?> .required, div#foxcontainer<?php echo $uid ?> .asterisk
+{
+	color: #b94a48;
+	font-weight: bold;
+}
+
+div#foxcontainer<?php echo $uid ?> .required:after, div#foxcontainer<?php echo $uid ?> .asterisk:after
+{
+	content: "*";
+}
+
+/* Switch labels and fields to the traditional box model */
+div#foxcontainer<?php echo $uid ?> .control-label,
+div#foxcontainer<?php echo $uid ?> input,
+div#foxcontainer<?php echo $uid ?> label.checkbox,
+div#foxcontainer<?php echo $uid ?> textarea,
+div#foxcontainer<?php echo $uid ?> .chzn-container-single .chzn-single
+{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* Input boxes and textareas */
+div#foxcontainer<?php echo $uid ?> input[type="text"],
+div#foxcontainer<?php echo $uid ?> textarea
+{
+	margin: 0; /* Some templates including protostar apply margin-bottom to labels */
+	padding: 4px 5px;
+}
+
+div#foxcontainer<?php echo $uid ?> select,
+div#foxcontainer<?php echo $uid ?> input[type="text"]
+{
+	height: 28px;
+	line-height: 28px;
+}
+
+/* Captcha reload button */
+div#foxcontainer<?php echo $uid ?> div.fcaptcha-reload-container img
+{
+	cursor: pointer;
+}
+
+/* Upload button */
+div#foxcontainer<?php echo $uid ?> .qq-upload-button-caption
+{
+	/* Fix: An issue with ie7 */
+	vertical-align: top;
+}
+
+div#foxcontainer<?php echo $uid ?> .qq-upload-button-hover
+{
+}
+
+div#foxcontainer<?php echo $uid ?> .qq-upload-button-focus
+{
+	outline: 1px dotted black;
+}
+
+/* Upload list */
+div#foxcontainer<?php echo $uid ?> ul.qq-upload-list
+{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+div#foxcontainer<?php echo $uid ?> ul.qq-upload-list > li
+{
+	list-style: none;
+}
+
+div#foxcontainer<?php echo $uid ?> .qq-upload-list span
+{
+	display: inline-block;
+	white-space: nowrap;
+	padding: 0 20px;
+	background-repeat: no-repeat;
+	background-position: <?php echo $left ?> center;
+	/* Redundant defaults
+	background-color: transparent;
+	background-attachment:scroll; */
+}
+
+/* Hide Successful and failure messages while uploading  */
+div#foxcontainer<?php echo $uid ?> li span.qq-upload-failed-text,
+div#foxcontainer<?php echo $uid ?> li span.qq-upload-success-text
+{
+	display: none;
+}
+
+/* Display again Success message when upload is successful and vice versa */
+div#foxcontainer<?php echo $uid ?> li.qq-upload-fail span.qq-upload-failed-text,
+div#foxcontainer<?php echo $uid ?> li.qq-upload-success span.qq-upload-success-text
+{
+	display: inline-block;
+}
+
+/* Spinner while uploading */
+div#foxcontainer<?php echo $uid ?> span.qq-upload-spinner
+{
+	background: url("<?php echo $juri_root ?>/media/com_foxcontact/images/loading.gif");
+	width: 15px;
+	height: 15px;
+	vertical-align: text-bottom;
+	padding: 0;
+	margin: 0;
+}
+
+/* Fix: Some templates use background as list style */
+div#foxcontainer<?php echo $uid ?> ul.qq-upload-list > li
+{
+	background: none;
+	padding: 0; /* In those cases they usually set a left/right padding in addition */
+}
+
+/* Help text under some fields */
+div#foxcontainer<?php echo $uid ?> span.help-block
+{
+	display: block;
+}
+
+/* Built-in captcha */
+div#foxcontainer<?php echo $uid ?> .fcaptchafieldcontainer img
+{
+	/* Fix: An IE 8 issue related to some templates where img have max-width:100% */
+	max-width: none;
+}
+
+/* Built-in captcha input box */
+div#foxcontainer<?php echo $uid ?> .fcaptchainputcontainer
+{
+	float: <?php echo $left ?>;
+}
+
+/* Reset button */
+div#foxcontainer<?php echo $uid ?> .reset-button
+{
+	margin-<?php echo $left ?>: 32px;
+}
+
+/* Chosen select box customizations. Based on media/jui/chosen.css 0.14.0 bundled with Joomla 3.2.3. */
+
+/* Customized background sprite */
+div#foxcontainer<?php echo $uid ?> .chzn-container-single .chzn-single div b,
+div#foxcontainer<?php echo $uid ?> .chzn-container-single .chzn-search input[type="text"],
+div#foxcontainer<?php echo $uid ?> .chzn-container-single .chzn-single abbr,
+div#foxcontainer<?php echo $uid ?> .chzn-container-multi .chzn-choices li.search-choice .search-choice-close
+{
+	background-image: url("<?php echo $juri_root ?>/media/com_foxcontact/images/ui.png");
+}
+
+div#foxcontainer<?php echo $uid ?> .chzn-container-single .chzn-single div
+{
+	width: 26px;
+}
+
+/* Fix: Joomla implementation of chosen "rtl downward arrow" is partial. The code to move the arrow on the left side is in media/jui/css/bootstrap-rtl.css while it should be in media/jui/css/chosen.css. This way the rtl downward arrow only applies to protostar frontend template, which loads rtl variation of twitter bootstrap. */
+html[dir="rtl"] div#foxcontainer<?php echo $uid ?> .chzn-container-single .chzn-single div
+{
+	right: auto;
+	left: 0;
+}
+
+/* Downward arrow */
+div#foxcontainer<?php echo $uid ?> .chzn-container-single .chzn-single div b
+{
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+html[dir="rtl"] div#foxcontainer<?php echo $uid ?> .chzn-container-single .chzn-single div b
+{
+	background-position: -2px 1px;
+}
+
+/* Upward arrow */
+div#foxcontainer<?php echo $uid ?> .chzn-container-active.chzn-with-drop .chzn-single div b
+{
+	background-position: -28px 1px;
+}
+
+html[dir="rtl"] div#foxcontainer<?php echo $uid ?> .chzn-container-active.chzn-with-drop .chzn-single div b
+{
+	background-position: -30px 1px;
+}
+
+/* Unselected selector */
+div#foxcontainer<?php echo $uid ?> .chzn-container-single .chzn-single
+{
+	/* Customized vertical gradient */
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(20%, #ffffff), color-stop(100%, #eeeeee));
+	background-image: -webkit-linear-gradient(top, #ffffff 20%, #eeeeee 100%);
+	background-image: -moz-linear-gradient(top, #ffffff 20%, #eeeeee 100%);
+	background-image: -o-linear-gradient(top, #ffffff 20%, #eeeeee 100%);
+	background-image: -ms-linear-gradient(top, #ffffff 20%, #eeeeee 100%);
+	background-image: linear-gradient(top, #ffffff 20%, #eeeeee 100%);
+	/* Some templates like beez_20 set font color and background with a high specificity #main a:hover */
+  	color: #555;
+  	background-color: #fff;
+	width: 100%;
+	padding: 0 5px;
+	/* Set the same height than the input fields*/
+	height: 26px;
+	line-height: 26px;
+}
+
+/* Selected selector */
+div#foxcontainer<?php echo $uid ?> .chzn-container-active.chzn-with-drop .chzn-single
+{
+  /* The same gradient defined in chosen base, but there it doesn't have enough specificity to be applied */
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(20%, #eeeeee), color-stop(80%, #ffffff));
+  background-image: -webkit-linear-gradient(#eeeeee 20%, #ffffff 80%);
+  background-image: -moz-linear-gradient(#eeeeee 20%, #ffffff 80%);
+  background-image: -o-linear-gradient(#eeeeee 20%, #ffffff 80%);
+  background-image: linear-gradient(#eeeeee 20%, #ffffff 80%);
+}
+
+/* Set the same width than the input fields */
+div#foxcontainer<?php echo $uid ?> .chzn-container
+{
+	/* <?php $w = $this->Params->get("dropdown__width", (object)array("text" => "270", "select" => "px")) ?> */
+	width: <?php echo $w->text . $w->select; ?> !important; /* [!important] We have to override inline values */
+}
+
+/* Search input */
+div#foxcontainer<?php echo $uid ?> .chzn-container-single .chzn-search input[type="text"]
+{
+	background-position: 100% -26px;
+	padding: 4px 20px 4px 5px;
+	width: 100%;
+}
+
+/* Fix: Joomla implementation of chosen doesn't support "rtl search input". It behaves exactly like ltr */
+html[dir="rtl"] div#foxcontainer<?php echo $uid ?> .chzn-container-single .chzn-search input[type="text"]
+{
+	background-position: -48px -26px;
+	padding: 4px 5px 4px 20px;
+}
+
+/* Close button (X) */
+div#foxcontainer<?php echo $uid ?> .chzn-container-single .chzn-single abbr
+{
+	right: 30px;
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+
+div#foxcontainer<?php echo $uid ?> .chzn-container-single .chzn-single abbr:hover
+{
+	background-position: right -11px;
+}
+
+/* Fix: Joomla implementation of chosen "rtl X button" is partial. The code to move the X on the left side is in media/jui/css/bootstrap-rtl.css while it should be in media/jui/css/chosen.css. This way the rtl x button only applies to protostar frontend template, which loads rtl variation of twitter bootstrap. */
+html[dir="rtl"] div#foxcontainer<?php echo $uid ?> .chzn-container-single .chzn-single abbr
+{
+	right: auto;
+	left: 30px;
+}
+
+/* Close button (X) in Multiple Select layout */
+div#foxcontainer<?php echo $uid ?> .chzn-container-multi .chzn-choices li.search-choice .search-choice-close
+{
+	background-repeat: no-repeat;
+	background-position: right top;
+}
+
+/* Some statements from the basic css need a higher specificity { */
+div#foxcontainer<?php echo $uid ?> .chzn-container .chzn-results li
+{
+  line-height: 15px;
+  padding: 5px 6px;
+  margin: 0;
+  list-style: none;
+  background: none; /* Fix { Some templates use background as list style } */
+}
+
+div#foxcontainer<?php echo $uid ?> .chzn-container .chzn-results li.highlighted
+{
+  background-color: #3875d7;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(20%, #3875d7), color-stop(90%, #2a62bc));
+  background-image: -webkit-linear-gradient(#3875d7 20%, #2a62bc 90%);
+  background-image: -moz-linear-gradient(#3875d7 20%, #2a62bc 90%);
+  background-image: -o-linear-gradient(#3875d7 20%, #2a62bc 90%);
+  background-image: linear-gradient(#3875d7 20%, #2a62bc 90%);
+}
+/* } */
+
+/* Asterisks (*name:value) and backslash 9 (name:value\9) are IE hacks made by twitter bootstrap. */
+/* Twitter bootstrap buttons */
+div#foxcontainer<?php echo $uid ?> .btn
+{
+	display: inline-block;
+	*display: inline;
+	margin-bottom: 0;
+	*margin-left: .3em;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	background-color: #f5f5f5;
+	*background-color: #e6e6e6;
+	background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
+	background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
+	background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
+	background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+	background-repeat: repeat-x;
+	border: 1px solid #bbbbbb;
+	*border: 0;
+	border-color: #c5c5c5;
+	border-color: rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.25);
+	border-bottom-color: #a2a2a2;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#ffffffff', endColorstr = '#ffe6e6e6', GradientType = 0);
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+	*zoom: 1;
+	-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+	-moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+/* button when mouse hover */
+div#foxcontainer<?php echo $uid ?> .btn:hover
+{
+	/* A lot of bad written Joomla templates force a white font with !important */
+	color: #333333 !important;
+	text-decoration: none;
+	background-color: #e6e6e6;
+	*background-color: #d9d9d9; /* Buttons in IE7 don't get borders, so darken on hover */
+	background-position: 0 -15px;
+	-webkit-transition: background-position 0.1s linear;
+	-moz-transition: background-position 0.1s linear;
+	-o-transition: background-position 0.1s linear;
+	transition: background-position 0.1s linear;
+}
+
+div#foxcontainer<?php echo $uid ?> .btn:first-child
+{
+	*margin-left: 0;
+}
+
+div#foxcontainer<?php echo $uid ?> button.btn,
+div#foxcontainer<?php echo $uid ?> input[type="submit"].btn
+{
+	*padding-top: 3px;
+	*padding-bottom: 3px;
+}
+
+div#foxcontainer<?php echo $uid ?> button.btn::-moz-focus-inner,
+div#foxcontainer<?php echo $uid ?> input[type="submit"].btn::-moz-focus-inner
+{
+	padding: 0;
+	border: 0;
+}
+
+div#foxcontainer<?php echo $uid ?> label
+{
+	display: block;
+}
+
+div#foxcontainer<?php echo $uid ?> .foxform-inline .control-group label
+{
+	display: inline-block;
+}
+
+div#foxcontainer<?php echo $uid ?> input[type="radio"],
+div#foxcontainer<?php echo $uid ?> input[type="checkbox"]
+{
+	margin: 4px 0 0;
+	margin-top: 1px  \9;
+	*margin-top: 0;
+	line-height: normal;
+	cursor: pointer;
+}
+
+div#foxcontainer<?php echo $uid ?> input[type="file"],
+div#foxcontainer<?php echo $uid ?> input[type="image"],
+div#foxcontainer<?php echo $uid ?> input[type="submit"],
+div#foxcontainer<?php echo $uid ?> input[type="reset"],
+div#foxcontainer<?php echo $uid ?> input[type="button"],
+div#foxcontainer<?php echo $uid ?> input[type="radio"],
+div#foxcontainer<?php echo $uid ?> input[type="checkbox"]
+{
+	width: auto;
+}
+
+div#foxcontainer<?php echo $uid ?> input,
+div#foxcontainer<?php echo $uid ?> label.checkbox
+{
+	width: <?php $w = $this->Params->get("text__width", (object)array("text" => "270", "select" => "px")); echo $w->text . $w->select; ?>;
+}
+
+div#foxcontainer<?php echo $uid ?> textarea
+{
+	width: <?php $w = $this->Params->get("textarea__width", (object)array("text" => "270", "select" => "px")); echo $w->text . $w->select; ?>;
+	height: <?php $h = $this->Params->get("textarea__height", (object)array("text" => "180", "select" => "px")); echo $h->text . $h->select; ?>;
+}
+
+/* Standard select used as fallback under some circumstances */
+div#foxcontainer<?php echo $uid ?> select
+{
+	/* <?php $w = $this->Params->get("dropdown__width", (object)array("text" => "270", "select" => "px")) ?> */
+	width: <?php echo $w->text . $w->select; ?>;
+}
+
+/* form elements based on form type */
+div#foxcontainer<?php echo $uid ?> .foxform-compact .control-group,
+div#foxcontainer<?php echo $uid ?> .foxform-extended .control-group
+{
+	/* can't use overflow:hidden; due to "Chosen" dropdown select boxes. Fallback to float:left alternative, but it needs width:100% */
+	float: <?php echo $left ?>;
+	width:100%;
+	*zoom: 1;
+}
+
+div#foxcontainer<?php echo $uid ?> .foxform-inline .control-group
+{
+	display: inline-block;
+}
+
+/* Field labels */
+div#foxcontainer<?php echo $uid ?> .control-label
+{
+	margin: 0; /* Some templates including protostar apply margin-bottom to labels */
+	min-height: 28px;
+	line-height: 28px;
+}
+
+div#foxcontainer<?php echo $uid ?> .foxform-compact .control-label,
+div#foxcontainer<?php echo $uid ?> .foxform-extended .control-label
+{
+	float: <?php echo $left ?>;
+	width: <?php $w = $this->Params->get("labels__width", (object)array("text" => "230", "select" => "px")); echo $w->text . $w->select; ?>;
+}
+
+div#foxcontainer<?php echo $uid ?> .foxform-extended .control-label
+{
+	text-align: <?php echo $left ?>;
+	padding-<?php echo $right ?>: 16px;
+}
+
+div#foxcontainer<?php echo $uid ?> .foxform-compact .control-label
+{
+	text-align: <?php echo $right ?>;
+	padding-<?php echo $right ?>: 16px;
+}
+
+/* Fields container */
+div#foxcontainer<?php echo $uid ?> .foxform-compact .controls,
+div#foxcontainer<?php echo $uid ?> .foxform-extended .controls
+{
+	float: <?php echo $left ?>;
+}
+
+div#foxcontainer<?php echo $uid ?> .foxform-centered .control-label,
+div#foxcontainer<?php echo $uid ?> .foxform-centered .controls.buttons, /* Buttons container */
+div#foxcontainer<?php echo $uid ?> .foxform-centered .qq-uploader,
+div#foxcontainer<?php echo $uid ?> .foxform-centered .help-block
+{
+	text-align: center;
+}
+
+div#foxcontainer<?php echo $uid ?> .foxform-centered input,
+div#foxcontainer<?php echo $uid ?> .foxform-centered textarea,
+div#foxcontainer<?php echo $uid ?> .foxform-centered label.checkbox,
+div#foxcontainer<?php echo $uid ?> .foxform-centered .chzn-container
+{
+	display: block;
+	margin: 0 auto;
+}
+
+/* Checkbox and radio center alignment and text indentation */
+div#foxcontainer<?php echo $uid ?> .radio,
+div#foxcontainer<?php echo $uid ?> .checkbox
+{
+	min-height: 20px;
+	padding-<?php echo $left ?>: 20px;
+}
+
+div#foxcontainer<?php echo $uid ?> .radio input[type="radio"],
+div#foxcontainer<?php echo $uid ?> .checkbox input[type="checkbox"]
+{
+	float: <?php echo $left ?>;
+	margin-<?php echo $left ?>: -20px;
+}
+
+div#foxcontainer<?php echo $uid ?> .controls
+{
+	/* Removes the 180px left margin set by bootstrap */
+	margin: 0;
+	/* Fix: dropdown collapse with layout extended in the module, but hurts the view of the component */
+	/*width: 100%;*/
+
+	/*<?php if (!(bool)$this->Params->get("labelsdisplay") && $this->Params->get("form_layout", "extended") == "centered") { ?>*/
+	display: table;
+	float: none;
+	margin: 0 auto;
+	/*<?php } ?>*/
+}
+
+div#foxcontainer<?php echo $uid ?> .foxform-inline .controls
+{
+	display:	inline-block;
+}
+
+/*<?php
+define("WIDTH", 0);
+define("HEIGHT", 1);
+?>*/
+
+/*<?php
+$submitimage = $this->Params->get("submitimage", "-1");
+if ($submitimage != "-1") {
+?>*/
+
+div#foxcontainer<?php echo $uid ?> button[type="submit"] > span
+{
+	display: none;
+}
+
+div#foxcontainer<?php echo $uid ?> input[type="submit"],
+div#foxcontainer<?php echo $uid ?> button[type="submit"]
+{
+	border: none;
+	color: transparent;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	font-size: 0;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
+div#foxcontainer<?php echo $uid ?> input[type="submit"]:hover,
+div#foxcontainer<?php echo $uid ?> button[type="submit"]:hover
+{
+	background-color: transparent;
+	background-position: 0 0;
+}
+
+div#foxcontainer<?php echo $uid ?> input[type="submit"],
+div#foxcontainer<?php echo $uid ?> button[type="submit"]
+{
+
+	/*<?php
+	$submitimage = "/media/com_foxcontact/images/buttons/submit/" . $submitimage;
+	$size = getimagesize(JPATH_ROOT . $submitimage) or $size = array(0, 0);
+	?>*/
+
+	background-image: url("<?php echo JURI::root(true) . $submitimage ?>");
+	width: <?php echo $size[WIDTH] ?>px;
+	height: <?php echo $size[HEIGHT] ?>px;
+}
+
+/*<?php } ?>*/
+
+/*<?php
+$resetimage = $this->Params->get("resetimage", "-1");
+if ($resetimage != "-1") {
+?>*/
+
+div#foxcontainer<?php echo $uid ?> button[type="reset"] > span
+{
+	display: none;
+}
+
+div#foxcontainer<?php echo $uid ?> input[type="reset"],
+div#foxcontainer<?php echo $uid ?> button[type="reset"]
+{
+	border: none;
+	color: transparent;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	font-size: 0;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
+div#foxcontainer<?php echo $uid ?> input[type="reset"]:hover,
+div#foxcontainer<?php echo $uid ?> button[type="reset"]:hover
+{
+	background-color: transparent;
+	background-position: 0 0;
+}
+
+div#foxcontainer<?php echo $uid ?> input[type="reset"],
+div#foxcontainer<?php echo $uid ?> button[type="reset"]
+{
+
+	/*<?php
+	$resetimage = "/media/com_foxcontact/images/buttons/reset/" . $resetimage;
+	$size = getimagesize(JPATH_ROOT . $resetimage) or $size = array(0, 0);
+	?>*/
+
+	background-image: url("<?php echo JURI::root(true) . $resetimage ?>");
+	width: <?php echo $size[WIDTH] ?>px;
+	height: <?php echo $size[HEIGHT] ?>px;
+}
+
+/*<?php } ?>*/
+
+div#foxcontainer<?php echo $uid ?> input.foxcalendar
+{
+	cursor: pointer;
+	/* Prevent selection in order to avoid backspace which would take the page back */
+	-moz-user-select: -moz-none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
